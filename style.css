@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #EEEEEE;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-weight: 500;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration:solid;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align: center;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-gap: 20px;
+}
+  
+
+a{
+    color: rgb(53, 156, 187);
+    font-size: 18px;
+    position: relative;
+    text-decoration:none;
+}
+.container{
+    background-color: rgb(32, 226, 90);
+    border-radius: 20px;
+    padding: 30px;
+    color: #EEEEEE;
+    font-weight: 1000px;
+}
+.container ul{
+    padding: 20px;
+}
+#about{
+    padding: 20px;
+}
+#about img{
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+}
+#contact{
+    padding: 20px;
+}
+#skill{
+    padding: 20px;
+}
+#education{
+    padding: 20px;
+}
+#experience{
+    padding: 20px;
+}
+#project{
+    padding: 20px;
+}
+#hobby{
+    padding: 20px;
+}
+#blog{
+    padding: 20px;
+}
